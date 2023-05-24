@@ -7,6 +7,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-rows: 1fr 5fr max-content;
+  position: relative;
 }
 button {
   padding: 1rem 2rem;
@@ -26,6 +27,51 @@ header {
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 30px;
 }
+
+form {
+  padding: 2rem;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  text-align: center;
+  gap: 1.5rem;
+  border-radius: 14px;
+}
+form .addBook {
+  font-size: 1.5rem;
+}
+form input {
+  width: 20rem;
+  padding: 4%;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid grey;
+  border-radius: 5px;
+}
+form input:focus {
+  outline: none;
+  border-bottom: 2px solid black;
+}
+form .readCheck {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.readCheck input {
+  display: flex;
+  width: 18px;
+}
+form button {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+form button:hover {
+  background-color: limegreen;
+}
+
 main {
   padding: 2rem;
   display: grid;
