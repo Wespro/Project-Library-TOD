@@ -8,38 +8,35 @@
     <link href="./styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <div id="bodyDim"></div>
     <header>
       <h1>Library</h1>
-      <form action="">
-        <h3 class="addBook">Add New Book</h3>
-        <input type="text" placeholder="Title" required />
-        <input type="text" placeholder="Author" required />
-        <input type="number" placeholder="pages" required />
-        <div class="readCheck">
-          <h3>Have you read it?</h3>
-          <input type="checkbox" />
+      <form class="closeForm">
+        <h3 class="addBookForm">Add New Book</h3>
+        <div class="title">
+          <label for="title">Title</label>
+          <input id="title" type="text" placeholder="Running" required />
         </div>
-        <button type="submit">Submit</button>
+        <div class="author">
+          <label for="author">Author</label>
+          <input id="author" type="text" placeholder="J.K.Smith" required />
+        </div>
+        <div class="numPages">
+          <label for="numPages">Number of pages</label>
+          <input id="numPages" type="number" placeholder="50" required />
+        </div>
+        <div class="readCheck">
+          <label>Have you read it?</label>
+          <input id="isRead" type="checkbox" />
+        </div>
+        <button id="submitBtn" type="submit">Submit</button>
       </form>
     </header>
     <main>
-      <button id="addBook">Add New Book +</button>
-      <div class="cards">
-        <div class="card">
-          <h3>Title: dsadsa</h3>
-          <h3>Title: dsadsa</h3>
-          <h3>Title: dsadsa</h3>
-          <button id="beenRead">Read it</button>
-          <button id="remove">Remove</button>
-        </div>
-      </div>
+      <button id="addBookBtn">New Book +</button>
+      <div class="cards"></div>
     </main>
-    <footer>
-      <h3>
-        Copyright © 2023
-        <a href="https://github.com/Wespro">Abdelrahman Mohammed</a>
-      </h3>
-    </footer>
+    <footer></footer>
     <script src="./app.js"></script>
   </body>
 </html>
