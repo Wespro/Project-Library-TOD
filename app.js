@@ -1,5 +1,6 @@
+//storge
 let myLibrary = [];
-
+//constructor function
 function Book(title, author, numPages, isRead, bookKey) {
   this.title = title;
   this.author = author;
@@ -17,7 +18,7 @@ const authorInput = document.getElementById("author");
 const numPagesInput = document.getElementById("numPages");
 const isReadInput = document.querySelector("#isRead");
 const cards = document.querySelector(".cards");
-
+//constractor event call
 function addToBookLibrary(e) {
   if (!titleInput.value || !authorInput.value || !numPagesInput.value) {
     return;
@@ -92,14 +93,14 @@ function addToBookLibrary(e) {
 }
 
 submitBtn.addEventListener("click", addToBookLibrary);
-//form pop event
+//form pop open event
 addBookBtn.addEventListener("click", function (e) {
   form.classList.remove("closeForm");
   form.classList.add("openForm");
   bodyDim.classList.add("formOpened");
 });
 
-//form pop close
+//form close
 bodyDim.addEventListener("click", closeForm);
 function closeForm(e) {
   form.classList.add("closeForm");
