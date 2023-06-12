@@ -1,14 +1,12 @@
 //storge
 let myLibrary = [];
 //constructor function
-class Book {
-  constructor(title, author, numPages, isRead, bookKey) {
-    this.title = title;
-    this.author = author;
-    this.numPages = numPages;
-    this.isRead = isRead;
-    this.bookKey = bookKey;
-  }
+function Book(title, author, numPages, isRead, bookKey) {
+  this.title = title;
+  this.author = author;
+  this.numPages = numPages;
+  this.isRead = isRead;
+  this.bookKey = bookKey;
 }
 //Variables
 const addBookBtn = document.querySelector("#addBookBtn");
